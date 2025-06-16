@@ -102,15 +102,6 @@ This script is a flexible tool for your command-line arsenal.
 EOF
 }
 
-# --- Argument Parsing ---
-
-# Check for --help-full (or -H) first, as getopts doesn't handle long options directly.
-# This ensures that if the user types `./reorder-columns --help-full`, it works.
-if [[ "$1" == "--help-full" ]]; then
-    full_usage
-    exit 0
-fi
-
 # Initialize variables for our optional arguments.
 INPUT_DELIMITER_ARG=""
 OUTPUT_DELIMITER_ARG=""
